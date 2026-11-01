@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#474833", "error": "#ba1a1a", "surface": "#fbf9f7", "tertiary-fixed-dim": "#7bd4dd", "surface-container-highest": "#e4e2e0", "secondary": "#625e5a", "secondary-fixed": "#e8e1dd", "primary-container": "#e4f222", "on-tertiary-fixed-variant": "#004f55", "tertiary-fixed": "#98f1fa", "on-background": "#1b1c1b", "ash": "#6d6c6b", "ink": "#0c0a08", "surface-container-low": "#f5f3f1", "inverse-on-surface": "#f2f0ee", "outline-variant": "#c8c8ac", "surface-container-high": "#eae8e6", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#002022", "smoke": "#d3d3d3", "on-primary-container": "#666d00", "on-primary-fixed": "#1b1d00", "inverse-surface": "#30302f", "on-error": "#ffffff", "surface-container": "#efedeb", "outline": "#787960", "surface-container-lowest": "#ffffff", "on-primary": "#ffffff", "primary-fixed-dim": "#c3d000", "surface-variant": "#e4e2e0", "on-error-container": "#93000a", "hairline": "#e5e7eb", "highlighter-yellow": "#e4f222", "surface-tint": "#5d6300", "secondary-fixed-dim": "#cbc5c1", "secondary-container": "#e5deda", "on-primary-fixed-variant": "#454a00", "on-tertiary-container": "#00737b", "tertiary": "#006970", "on-secondary": "#ffffff", "tertiary-container": "#9df6ff", "on-secondary-fixed-variant": "#4a4643", "obsidian": "#1a1919", "surface-dim": "#dbdad8", "bone": "#f4f2f0", "inverse-primary": "#c3d000", "background": "#fbf9f7", "on-secondary-container": "#66625f", "surface-bright": "#fbf9f7", "primary": "#5d6300", "paper": "#ffffff", "on-secondary-fixed": "#1e1b19", "primary-fixed": "#dfed1a", "error-container": "#ffdad6", "on-surface": "#1b1c1b" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "margin": "2rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter": "1.5rem" }, "fontFamily": { "display-lg": [ "Hanken Grotesk" ], "display-lg-mobile": [ "Hanken Grotesk" ], "body-lg": [ "Hanken Grotesk" ], "label-caps": [ "Hanken Grotesk" ], "headline-sm": [ "Hanken Grotesk" ], "body-sm": [ "Hanken Grotesk" ], "headline-md": [ "Hanken Grotesk" ], "label-md": [ "Hanken Grotesk" ], "body-md": [ "Hanken Grotesk" ], "headline-xl-mobile": [ "Hanken Grotesk" ], "headline-lg": [ "Hanken Grotesk" ], "headline-xl": [ "Hanken Grotesk" ] }, "fontSize": { "display-lg": [ "56px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "display-lg-mobile": [ "36px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-caps": [ "10px", { "lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-md": [ "24px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-md": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-lg": [ "32px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-xl": [ "40px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-bone text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50"><aside class="h-10 bg-paper border-b border-hairline flex items-center justify-between px-margin-mobile md:px-margin select-none"><div class="flex items-center gap-space-sm overflow-hidden"><span class="inline-block px-1.5 py-0.5 rounded-[4px] bg-bone border border-hairline text-label-caps font-label-caps uppercase tracking-wider text-ink font-semibold">Release</span><a class="text-label-md font-label-md text-secondary hover:text-ink truncate transition-colors" data-path="models" href="#">New: Unified multi-provider failover routing is now live · Read update →</a></div><button aria-label="Dismiss announcement" class="p-1 text-ash hover:text-ink hover:bg-bone rounded transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[16px]">close</span></button></aside><nav class="h-[62px] bg-paper/95 backdrop-blur-md border-b border-hairline px-margin-mobile md:px-margin"><div class="max-w-7xl mx-auto h-full flex items-center justify-between"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group focus:outline-none" data-path="models" href="#"><img alt="AI Hub Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VhU8VMjbS3avUT_r5WBEqZar9_InBXq2YUy4IGXpJHvHFeLSgX6VNzZb6dFCBw8Jyl_GJd-BuQ8gmAfa8lBEwn1k-rjGbFTvhx-cFZVoGXyzSIv7wXTdpNM4-fcwo9JYlzWJh6bnPTQBwuYR4JtMEkN_kj3f1Oo6jAC5GQ7Sb7HuXFZ-fXveCtDrZ0ScyYY-ZYvUQ_QGKf28UUbszkK_hkrUK_-0OcKXoStjiguxu_"/><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-ink font-bold">AI HUB</span></a><div class="hidden md:flex items-center gap-1" data-active-classes="bg-bone text-ink font-medium"><a class="px-3 py-1.5 rounded-[6px] text-body-md font-body-md text-secondary hover:text-ink hover:bg-bone transition-colors" data-path="models" href="#">Models</a><a class="px-3 py-1.5 rounded-[6px] text-body-md font-body-md text-secondary hover:text-ink hover:bg-bone transition-colors" data-path="agents" href="#">Agents</a><a class="px-3 py-1.5 rounded-[6px] text-body-md font-body-md text-secondary hover:text-ink hover:bg-bone transition-colors" data-path="pricing" href="#">Pricing</a><a class="px-3 py-1.5 rounded-[6px] text-body-md font-body-md text-secondary hover:text-ink hover:bg-bone transition-colors" data-path="dashboard" href="#">Dashboard</a><a class="px-3 py-1.5 rounded-[6px] text-body-md font-body-md text-secondary hover:text-ink hover:bg-bone transition-colors" data-path="documentation" href="#">Documentation</a></div></div><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-1.5 rounded-[6px] text-body-md font-body-md text-ink hover:bg-bone transition-colors" data-path="login" href="#">Sign in</a><a class="inline-flex items-center justify-center px-4 py-2 rounded-[6px] bg-highlighter-yellow text-ink text-body-md font-body-md font-medium tracking-tight hover:opacity-95 transition-opacity" data-path="get-started" href="#">Get started</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></nav></header><main class="w-full pt-[102px] bg-bone flex-1"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="w-full px-margin-mobile md:px-margin pt-space-lg md:pt-space-xl pb-16">
+<div class="max-w-[1200px] mx-auto flex flex-col gap-space-xl">
+<!-- Eyebrow Pill -->
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-highlighter-yellow/30 border border-ink/10 text-ink text-label-caps font-label-caps uppercase tracking-wider font-normal">
+<span class="w-1.5 h-1.5 rounded-full bg-ink"></span>
+          UNIFIED INFERENCE GATEWAY · V1.0
+        </span>
+<span class="text-ash text-label-caps font-label-caps uppercase tracking-wider hidden sm:inline">
+          PROD-READY · SLA 99.99%
+        </span>
+</div>
+<!-- Main Headline & Description Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<h1 class="text-ink text-display-lg-mobile md:text-display-lg font-display-lg leading-[1.0] tracking-[-0.03em] font-normal">
+            เลือกและเรียกใช้ AI models ทุกค่าย ผ่าน API เดียว
+          </h1>
+<p class="text-ash text-headline-sm font-headline-sm leading-relaxed max-w-2xl font-normal">
+            เปรียบเทียบราคา สลับ provider อัตโนมัติ และทดลองใช้งานได้ทันทีก่อนเริ่ม build ลดต้นทุนและ latency สูงสุด 40% ด้วย routing architecture อัจฉริยะ
+          </p>
+<!-- Composite CTA -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm max-w-xl">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-ash text-[18px]">mail</span>
+<input class="w-full h-11 pl-9 pr-3 rounded-[10px] bg-paper border border-hairline text-ink placeholder-ash text-body-md font-body-md focus:outline-none focus:border-ink transition-colors" id="hero-email" placeholder="ป้อนอีเมลเพื่อรับ $10 เครดิตทดลอง" type="email"/>
+</div>
+<button class="h-11 px-5 rounded-[6px] bg-highlighter-yellow hover:brightness-95 text-ink text-body-md font-body-md flex items-center justify-center gap-1.5 transition-all select-none font-normal" onclick="handleGetStarted()" type="button">
+<span>Get started for free</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<a class="h-11 px-4 rounded-[6px] bg-paper border border-hairline hover:bg-bone text-ink text-body-md font-body-md flex items-center justify-center transition-colors font-normal whitespace-nowrap" href="#models-directory">
+              Explore models →
+            </a>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs text-ash text-body-sm font-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-ink">check_circle</span>
+              ไม่ต้องกรอกบัตรเครดิต
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-ink">check_circle</span>
+              OpenAI SDK drop-in replacement
+            </span>
+<span class="flex items-center gap-1 hidden sm:inline-flex">
+<span class="material-symbols-outlined text-[14px] text-ink">check_circle</span>
+              140+ โมเดลพร้อมใช้
+            </span>
+</div>
+</div>
+<!-- Metric Highlight Badge / Editorial Callout -->
+<div class="lg:col-span-4 flex flex-col gap-space-sm bg-paper p-space-md rounded-[16px] border border-hairline">
+<div class="flex items-center justify-between border-b border-hairline pb-2.5">
+<span class="text-label-caps font-label-caps uppercase text-ash tracking-wider">ROUTING ENGINE STATUS</span>
+<span class="inline-flex items-center gap-1 text-label-caps font-label-caps text-ink uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-highlighter-yellow"></span>
+              ACTIVE
+            </span>
+</div>
+<div class="space-y-1.5 py-1">
+<p class="text-ash text-body-sm font-body-sm">Instant Failover Health Check</p>
+<div class="flex items-baseline justify-between">
+<span class="text-ink text-headline-lg font-headline-lg leading-none font-normal">99.995%</span>
+<span class="text-label-caps font-label-caps text-ash uppercase">Zero dropped requests</span>
+</div>
+<div class="w-full bg-bone h-2 rounded-full overflow-hidden flex">
+<div class="bg-ink h-full" style="width: 82%"></div>
+<div class="bg-highlighter-yellow h-full" style="width: 17.995%"></div>
+<div class="bg-ash/40 h-full" style="width: 0.005%"></div>
+</div>
+</div>
+<div class="border-t border-hairline pt-2 flex items-center justify-between text-body-sm font-body-sm text-ash">
+<span>Global Route Latency</span>
+<span class="text-ink font-normal font-mono text-[13px]">12ms median overhead</span>
+</div>
+</div>
+</div>
+<!-- Hero Product Preview: Mini Interactive Comparison Terminal -->
+<div class="w-full bg-paper rounded-[16px] border border-hairline overflow-hidden">
+<!-- Terminal Bar -->
+<div class="h-10 bg-bone border-b border-hairline px-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-hairline"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-hairline"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-hairline"></span>
+</div>
+<span class="text-ash text-label-caps font-label-caps uppercase tracking-wider">
+              MULTI-MODEL INFERENCE BENCHMARK &amp; ROUTE TESTER
+            </span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-ash text-label-caps font-label-caps uppercase">Auto Failover:</span>
+<span class="px-2 py-0.5 rounded-[4px] bg-highlighter-yellow text-ink text-label-caps font-label-caps uppercase">
+              ENABLED
+            </span>
+</div>
+</div>
+<!-- Card Grid Comparison Preview -->
+<div class="p-space-md grid grid-cols-1 md:grid-cols-4 gap-space-sm">
+<!-- Model Card 1: DeepSeek -->
+<div class="p-space-sm rounded-[12px] bg-bone border border-hairline flex flex-col justify-between gap-space-sm hover:border-ink transition-colors group">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="text-label-caps font-label-caps uppercase text-ash tracking-wider">DEEPSEEK</span>
+<span class="px-1.5 py-0.5 rounded bg-highlighter-yellow text-ink text-label-caps font-label-caps uppercase">CHEAPEST</span>
+</div>
+<h4 class="text-ink text-headline-sm font-headline-sm font-normal">DeepSeek-V3</h4>
+<p class="text-ash text-body-sm font-body-sm">671B MoE · 128k context</p>
+</div>
+<div class="space-y-1.5 py-2 border-y border-hairline/80 font-mono text-[12px]">
+<div class="flex justify-between text-ash">
+<span>In / Out 1M:</span>
+<span class="text-ink font-normal">$0.14 / $0.28</span>
+</div>
+<div class="flex justify-between text-ash">
+<span>Avg Latency:</span>
+<span class="text-ink font-normal">240ms</span>
+</div>
+</div>
+<button class="w-full py-1.5 rounded-[6px] bg-paper border border-hairline text-ink hover:bg-highlighter-yellow hover:border-transparent text-label-caps font-label-caps uppercase transition-colors flex items-center justify-center gap-1 font-normal" onclick="simulatePing('deepseek', this)" type="button">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Test Route (240ms)</span>
+</button>
+</div>
+<!-- Model Card 2: Claude 3.5 Sonnet -->
+<div class="p-space-sm rounded-[12px] bg-bone border border-hairline flex flex-col justify-between gap-space-sm hover:border-ink transition-colors">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="text-label-caps font-label-caps uppercase text-ash tracking-wider">ANTHROPIC / BEDROCK</span>
+<span class="px-1.5 py-0.5 rounded bg-paper border border-hairline text-ink text-label-caps font-label-caps uppercase">BENCHMARK #1</span>
+</div>
+<h4 class="text-ink text-headline-sm font-headline-sm font-normal">Claude 3.5 Sonnet</h4>
+<p class="text-ash text-body-sm font-body-sm">Multimodal · 200k context</p>
+</div>
+<div class="space-y-1.5 py-2 border-y border-hairline/80 font-mono text-[12px]">
+<div class="flex justify-between text-ash">
+<span>In / Out 1M:</span>
+<span class="text-ink font-normal">$3.00 / $15.00</span>
+</div>
+<div class="flex justify-between text-ash">
+<span>Avg Latency:</span>
+<span class="text-ink font-normal">380ms</span>
+</div>
+</div>
+<button class="w-full py-1.5 rounded-[6px] bg-paper border border-hairline text-ink hover:bg-highlighter-yellow hover:border-transparent text-label-caps font-label-caps uppercase transition-colors flex items-center justify-center gap-1 font-normal" onclick="simulatePing('claude', this)" type="button">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Test Route (380ms)</span>
+</button>
+</div>
+<!-- Model Card 3: GPT-4o -->
+<div class="p-space-sm rounded-[12px] bg-bone border border-hairline flex flex-col justify-between gap-space-sm hover:border-ink transition-colors">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="text-label-caps font-label-caps uppercase text-ash tracking-wider">OPENAI / AZURE</span>
+<span class="px-1.5 py-0.5 rounded bg-paper border border-hairline text-ink text-label-caps font-label-caps uppercase">FLAGSHIP</span>
+</div>
+<h4 class="text-ink text-headline-sm font-headline-sm font-normal">GPT-4o</h4>
+<p class="text-ash text-body-sm font-body-sm">Multimodal · 128k context</p>
+</div>
+<div class="space-y-1.5 py-2 border-y border-hairline/80 font-mono text-[12px]">
+<div class="flex justify-between text-ash">
+<span>In / Out 1M:</span>
+<span class="text-ink font-normal">$2.50 / $10.00</span>
+</div>
+<div class="flex justify-between text-ash">
+<span>Avg Latency:</span>
+<span class="text-ink font-normal">310ms</span>
+</div>
+</div>
+<button class="w-full py-1.5 rounded-[6px] bg-paper border border-hairline text-ink hover:bg-highlighter-yellow hover:border-transparent text-label-caps font-label-caps uppercase transition-colors flex items-center justify-center gap-1 font-normal" onclick="simulatePing('gpt4o', this)" type="button">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Test Route (310ms)</span>
+</button>
+</div>
+<!-- Model Card 4: Llama 3.3 70B -->
+<div class="p-space-sm rounded-[12px] bg-bone border border-hairline flex flex-col justify-between gap-space-sm hover:border-ink transition-colors">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="text-label-caps font-label-caps uppercase text-ash tracking-wider">TOGETHER / GROQ</span>
+<span class="px-1.5 py-0.5 rounded bg-highlighter-yellow text-ink text-label-caps font-label-caps uppercase">FASTEST</span>
+</div>
+<h4 class="text-ink text-headline-sm font-headline-sm font-normal">Llama 3.3 70B</h4>
+<p class="text-ash text-body-sm font-body-sm">Open Weights · 128k context</p>
+</div>
+<div class="space-y-1.5 py-2 border-y border-hairline/80 font-mono text-[12px]">
+<div class="flex justify-between text-ash">
+<span>In / Out 1M:</span>
+<span class="text-ink font-normal">$0.59 / $0.79</span>
+</div>
+<div class="flex justify-between text-ash">
+<span>Avg Latency:</span>
+<span class="text-ink font-normal">145ms</span>
+</div>
+</div>
+<button class="w-full py-1.5 rounded-[6px] bg-paper border border-hairline text-ink hover:bg-highlighter-yellow hover:border-transparent text-label-caps font-label-caps uppercase transition-colors flex items-center justify-center gap-1 font-normal" onclick="simulatePing('llama', this)" type="button">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Test Route (145ms)</span>
+</button>
+</div>
+</div>
+<div class="hidden px-space-md py-2.5 bg-paper border-t border-hairline text-body-sm font-body-sm flex items-center justify-between" id="ping-alert-box">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-highlighter-yellow animate-ping"></span>
+<span class="text-ink font-mono text-[12px]" id="ping-alert-text">Simulating request payload...</span>
+</div>
+<span class="text-ash text-label-caps font-label-caps uppercase">Zero Lock-in Proxy Header Verified</span>
+</div>
+</div>
+</div>
+</section>
+<!-- LIVE METRIC COUNTER TICKER STRIP -->
+<section class="w-full bg-obsidian text-paper py-6 border-y border-secondary/20">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 divide-y lg:divide-y-0 lg:divide-x divide-secondary/20">
+<!-- Metric 1 -->
+<div class="pt-3 lg:pt-0 lg:px-4 first:pl-0 flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-highlighter-yellow inline-block animate-pulse"></span>
+<span class="text-ash text-label-caps font-label-caps uppercase tracking-wider">TOKENS ROUTED TODAY</span>
+</div>
+<div class="text-paper text-headline-lg font-headline-lg font-normal tracking-tight font-mono">
+            4,892,104,210
+          </div>
+<span class="text-ash text-body-sm font-body-sm">Traffic updated every 5s</span>
+</div>
+<!-- Metric 2 -->
+<div class="pt-3 lg:pt-0 lg:px-4 flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="text-ash text-label-caps font-label-caps uppercase tracking-wider">SUPPORTED MODELS</span>
+</div>
+<div class="text-paper text-headline-lg font-headline-lg font-normal tracking-tight">
+            140+ <span class="text-body-lg font-body-lg text-ash">Active</span>
+</div>
+<span class="text-ash text-body-sm font-body-sm">Across 12 Global Cloud Providers</span>
+</div>
+<!-- Metric 3 -->
+<div class="pt-3 lg:pt-0 lg:px-4 flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="text-ash text-label-caps font-label-caps uppercase tracking-wider">AVERAGE P99 LATENCY</span>
+</div>
+<div class="text-paper text-headline-lg font-headline-lg font-normal tracking-tight font-mono">
+            342ms
+          </div>
+<span class="text-ash text-body-sm font-body-sm">Routing node auto-selection</span>
+</div>
+<!-- Metric 4 -->
+<div class="pt-3 lg:pt-0 lg:px-4 last:pr-0 flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="text-ash text-label-caps font-label-caps uppercase tracking-wider">FAILOVER UPTIME</span>
+</div>
+<div class="text-paper text-headline-lg font-headline-lg font-normal tracking-tight font-mono">
+            99.995%
+          </div>
+<span class="text-ash text-body-sm font-body-sm">Dual-redundant gateway proxy</span>
+</div>
+</div>
+</div>
+</section>
+<!-- MODEL DIRECTORY & PRICING COMPARISON -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl" id="models-directory">
+<div class="max-w-[1200px] mx-auto flex flex-col gap-space-lg">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md border-b border-hairline pb-space-md">
+<div class="space-y-1">
+<span class="text-label-caps font-label-caps uppercase tracking-wider text-ash">MODEL DIRECTORY · CENTRAL REPOSITORY</span>
+<h2 class="text-ink text-headline-xl font-headline-xl tracking-tight font-normal">
+            เปรียบเทียบสเปกและราคาจริงแบบโปร่งใส
+          </h2>
+<p class="text-ash text-body-lg font-body-lg font-normal max-w-2xl">
+            ดึงราคาจริงจากระบบกลาง อัปเดตทุกชั่วโมง พร้อมแยกหน่วยคำนวณตาม Modality (Tokens, Images, Audio, Seconds)
+          </p>
+</div>
+<!-- Status Freshness Badge -->
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-[6px] bg-paper border border-hairline text-ash text-body-sm font-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-highlighter-yellow"></span>
+<span>Sync: 12 นาทีที่แล้ว (Cached Fallback Active)</span>
+</div>
+</div>
+<!-- Search & Filters Container -->
+<div class="bg-paper p-space-md rounded-[16px] border border-hairline flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm items-center">
+<!-- Search input -->
+<div class="md:col-span-6 relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-ash text-[18px]">search</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-[10px] bg-bone border border-hairline text-ink placeholder-ash text-body-sm font-body-sm focus:outline-none focus:border-ink transition-colors" id="model-search" oninput="filterModelsTable()" placeholder="ค้นหาโมเดล เช่น claude-3-5, gpt-4o, deepseek, flux, llama..." type="text"/>
+</div>
+<!-- Provider Select -->
+<div class="md:col-span-3">
+<select class="w-full h-10 px-3 rounded-[10px] bg-bone border border-hairline text-ink text-body-sm font-body-sm focus:outline-none focus:border-ink transition-colors cursor-pointer" id="provider-filter" onchange="filterModelsTable()">
+<option value="all">Providers: All Providers</option>
+<option value="DeepSeek">DeepSeek</option>
+<option value="Anthropic">Anthropic / Bedrock</option>
+<option value="OpenAI">OpenAI / Azure</option>
+<option value="Meta">Meta / Groq</option>
+<option value="Google">Google Vertex</option>
+<option value="Black Forest">Black Forest Labs</option>
+</select>
+</div>
+<!-- Sort Select -->
+<div class="md:col-span-3">
+<select class="w-full h-10 px-3 rounded-[10px] bg-bone border border-hairline text-ink text-body-sm font-body-sm focus:outline-none focus:border-ink transition-colors cursor-pointer" id="sort-filter" onchange="filterModelsTable()">
+<option value="default">Sort by: Default Recommended</option>
+<option value="price-asc">Sort by: Lowest Price First</option>
+<option value="latency-asc">Sort by: Lowest Latency</option>
+<option value="context-desc">Sort by: Largest Context</option>
+</select>
+</div>
+</div>
+<!-- Modality Pills Filter -->
+<div class="flex items-center gap-1.5 flex-wrap pt-1 border-t border-hairline">
+<span class="text-ash text-label-caps font-label-caps uppercase mr-2 tracking-wider">Modality:</span>
+<button class="modality-btn px-2.5 py-1 rounded-[6px] bg-ink text-paper text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="setModalityFilter('all', this)" type="button">
+            All Modalities
+          </button>
+<button class="modality-btn px-2.5 py-1 rounded-[6px] bg-bone hover:bg-paper text-ink border border-hairline text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="setModalityFilter('Text', this)" type="button">
+            Text / LLM
+          </button>
+<button class="modality-btn px-2.5 py-1 rounded-[6px] bg-bone hover:bg-paper text-ink border border-hairline text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="setModalityFilter('Multimodal', this)" type="button">
+            Vision / Multimodal
+          </button>
+<button class="modality-btn px-2.5 py-1 rounded-[6px] bg-bone hover:bg-paper text-ink border border-hairline text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="setModalityFilter('Code', this)" type="button">
+            Code Specialized
+          </button>
+<button class="modality-btn px-2.5 py-1 rounded-[6px] bg-bone hover:bg-paper text-ink border border-hairline text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="setModalityFilter('Image', this)" type="button">
+            Image Generation
+          </button>
+<button class="modality-btn px-2.5 py-1 rounded-[6px] bg-bone hover:bg-paper text-ink border border-hairline text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="setModalityFilter('Audio', this)" type="button">
+            Audio / Speech
+          </button>
+</div>
+</div>
+<!-- Models Table -->
+<div class="bg-paper rounded-[16px] border border-hairline overflow-x-auto">
+<table class="w-full text-left border-collapse" id="models-table">
+<thead>
+<tr class="bg-bone border-b border-hairline text-ash text-label-caps font-label-caps uppercase tracking-wider">
+<th class="py-3 px-4 font-normal">Model &amp; Provider</th>
+<th class="py-3 px-4 font-normal">Modality</th>
+<th class="py-3 px-4 font-normal">Context</th>
+<th class="py-3 px-4 font-normal">Input Price</th>
+<th class="py-3 px-4 font-normal">Output Price</th>
+<th class="py-3 px-4 font-normal">P99 Latency</th>
+<th class="py-3 px-4 font-normal">Failover Tier</th>
+<th class="py-3 px-4 text-right font-normal">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-hairline text-body-sm font-body-sm" id="models-body">
+<!-- Row 1: DeepSeek-V3 -->
+<tr class="model-row hover:bg-bone/60 transition-colors" data-context="128" data-latency="240" data-modality="Text Code" data-price="0.14" data-provider="DeepSeek">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-ink font-normal font-mono text-[14px]">deepseek-v3</span>
+<span class="text-ash text-body-sm font-body-sm">DeepSeek Official API</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-[4px] bg-bone border border-hairline text-ink text-label-caps font-label-caps uppercase">Text / Code</span>
+</td>
+<td class="py-3.5 px-4 font-mono text-ink">128k tokens</td>
+<td class="py-3.5 px-4 font-mono text-ink">$0.14 / 1M</td>
+<td class="py-3.5 px-4 font-mono text-ink">$0.28 / 1M</td>
+<td class="py-3.5 px-4 font-mono text-ink">240ms</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 text-ink text-label-caps font-label-caps uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-highlighter-yellow"></span>
+                  Multi-region
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded-[6px] bg-paper border border-hairline hover:bg-highlighter-yellow hover:border-transparent text-ink text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="selectModelForSnippet('deepseek-v3')" type="button">
+                  Use in API
+                </button>
+</td>
+</tr>
+<!-- Row 2: Claude 3.5 Sonnet -->
+<tr class="model-row hover:bg-bone/60 transition-colors" data-context="200" data-latency="380" data-modality="Multimodal Text" data-price="3.00" data-provider="Anthropic">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-ink font-normal font-mono text-[14px]">claude-3-5-sonnet-20241022</span>
+<span class="text-ash text-body-sm font-body-sm">Anthropic / AWS Bedrock</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-[4px] bg-bone border border-hairline text-ink text-label-caps font-label-caps uppercase">Multimodal</span>
+</td>
+<td class="py-3.5 px-4 font-mono text-ink">200k tokens</td>
+<td class="py-3.5 px-4 font-mono text-ink">$3.00 / 1M</td>
+<td class="py-3.5 px-4 font-mono text-ink">$15.00 / 1M</td>
+<td class="py-3.5 px-4 font-mono text-ink">380ms</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 text-ink text-label-caps font-label-caps uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-highlighter-yellow"></span>
+                  Direct + Bedrock
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded-[6px] bg-paper border border-hairline hover:bg-highlighter-yellow hover:border-transparent text-ink text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="selectModelForSnippet('claude-3-5-sonnet-20241022')" type="button">
+                  Use in API
+                </button>
+</td>
+</tr>
+<!-- Row 3: GPT-4o -->
+<tr class="model-row hover:bg-bone/60 transition-colors" data-context="128" data-latency="310" data-modality="Multimodal Text" data-price="2.50" data-provider="OpenAI">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-ink font-normal font-mono text-[14px]">gpt-4o</span>
+<span class="text-ash text-body-sm font-body-sm">OpenAI / Azure Foundry</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-[4px] bg-bone border border-hairline text-ink text-label-caps font-label-caps uppercase">Multimodal</span>
+</td>
+<td class="py-3.5 px-4 font-mono text-ink">128k tokens</td>
+<td class="py-3.5 px-4 font-mono text-ink">$2.50 / 1M</td>
+<td class="py-3.5 px-4 font-mono text-ink">$10.00 / 1M</td>
+<td class="py-3.5 px-4 font-mono text-ink">310ms</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 text-ink text-label-caps font-label-caps uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-highlighter-yellow"></span>
+                  Direct + Azure
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded-[6px] bg-paper border border-hairline hover:bg-highlighter-yellow hover:border-transparent text-ink text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="selectModelForSnippet('gpt-4o')" type="button">
+                  Use in API
+                </button>
+</td>
+</tr>
+<!-- Row 4: Llama 3.3 70B -->
+<tr class="model-row hover:bg-bone/60 transition-colors" data-context="128" data-latency="145" data-modality="Text Code" data-price="0.59" data-provider="Meta">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-ink font-normal font-mono text-[14px]">meta-llama/llama-3.3-70b-instruct</span>
+<span class="text-ash text-body-sm font-body-sm">Meta / Groq / Together</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-[4px] bg-bone border border-hairline text-ink text-label-caps font-label-caps uppercase">Text</span>
+</td>
+<td class="py-3.5 px-4 font-mono text-ink">128k tokens</td>
+<td class="py-3.5 px-4 font-mono text-ink">$0.59 / 1M</td>
+<td class="py-3.5 px-4 font-mono text-ink">$0.79 / 1M</td>
+<td class="py-3.5 px-4 font-mono text-ink">145ms</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 text-ink text-label-caps font-label-caps uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-highlighter-yellow"></span>
+                  Tri-Cloud Mesh
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded-[6px] bg-paper border border-hairline hover:bg-highlighter-yellow hover:border-transparent text-ink text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="selectModelForSnippet('meta-llama/llama-3.3-70b-instruct')" type="button">
+                  Use in API
+                </button>
+</td>
+</tr>
+<!-- Row 5: Gemini 1.5 Pro -->
+<tr class="model-row hover:bg-bone/60 transition-colors" data-context="2000" data-latency="420" data-modality="Multimodal Audio Text" data-price="1.25" data-provider="Google">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-ink font-normal font-mono text-[14px]">gemini-1.5-pro</span>
+<span class="text-ash text-body-sm font-body-sm">Google Cloud Vertex</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-[4px] bg-bone border border-hairline text-ink text-label-caps font-label-caps uppercase">Multimodal / Audio</span>
+</td>
+<td class="py-3.5 px-4 font-mono text-ink">2,000k tokens</td>
+<td class="py-3.5 px-4 font-mono text-ink">$1.25 / 1M</td>
+<td class="py-3.5 px-4 font-mono text-ink">$5.00 / 1M</td>
+<td class="py-3.5 px-4 font-mono text-ink">420ms</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 text-ink text-label-caps font-label-caps uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-highlighter-yellow"></span>
+                  GCP Direct
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded-[6px] bg-paper border border-hairline hover:bg-highlighter-yellow hover:border-transparent text-ink text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="selectModelForSnippet('gemini-1.5-pro')" type="button">
+                  Use in API
+                </button>
+</td>
+</tr>
+<!-- Row 6: FLUX.1 [schnell] -->
+<tr class="model-row hover:bg-bone/60 transition-colors" data-context="0" data-latency="850" data-modality="Image" data-price="0.003" data-provider="Black Forest">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-ink font-normal font-mono text-[14px]">black-forest-labs/flux-1-schnell</span>
+<span class="text-ash text-body-sm font-body-sm">Black Forest Labs Dedicated</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-[4px] bg-bone border border-hairline text-ink text-label-caps font-label-caps uppercase">Image Gen</span>
+</td>
+<td class="py-3.5 px-4 font-mono text-ink">1024x1024</td>
+<td class="py-3.5 px-4 font-mono text-ink">$0.003 / image</td>
+<td class="py-3.5 px-4 font-mono text-ash">N/A (Per Image)</td>
+<td class="py-3.5 px-4 font-mono text-ink">850ms</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 text-ink text-label-caps font-label-caps uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-highlighter-yellow"></span>
+                  GPU Auto-scale
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded-[6px] bg-paper border border-hairline hover:bg-highlighter-yellow hover:border-transparent text-ink text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="selectModelForSnippet('black-forest-labs/flux-1-schnell')" type="button">
+                  Use in API
+                </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-ash pt-1 px-1">
+<span>Showing 6 of 140+ real-time indexed models</span>
+<a class="text-ink hover:underline font-normal" href="#">View Complete 140+ Model Catalog Archive →</a>
+</div>
+</div>
+</section>
+<!-- UNIFIED API GATEWAY & CODE INTERACTION -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-bone">
+<div class="max-w-[1200px] mx-auto flex flex-col gap-space-lg">
+<div class="space-y-1">
+<span class="text-label-caps font-label-caps uppercase tracking-wider text-ash">UNIFIED INTERFACE · ZERO RE-ENGINEERING</span>
+<h2 class="text-ink text-headline-xl font-headline-xl tracking-tight font-normal">
+          เขียนโค้ดครั้งเดียว สลับได้ทุก Provider
+        </h2>
+<p class="text-ash text-body-lg font-body-lg font-normal max-w-2xl">
+          ระบบรองรับมาตรฐาน OpenAI API specification ทั้งหมด คุณเพียงแค่เปลี่ยน <code class="bg-paper px-1.5 py-0.5 rounded border border-hairline font-mono text-[13px] text-ink">base_url</code> ไม่ต้องลง SDK ใหม่
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Feature Highlights (Left 5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-sm justify-between">
+<!-- Card 1 -->
+<div class="p-space-md rounded-[16px] bg-paper border border-hairline flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-bone border border-hairline text-ink flex items-center justify-center text-label-caps font-label-caps font-normal">01</span>
+<h3 class="text-ink text-headline-sm font-headline-sm font-normal">Single SDK, Zero Vendor Lock-in</h3>
+</div>
+<p class="text-ash text-body-sm font-body-sm leading-relaxed pl-8">
+              สลับระหว่าง OpenAI, Anthropic, DeepSeek, Google หรือโมเดลโอเพนซอร์สบน Groq ได้ทันทีด้วยการเปลี่ยนค่า <code class="font-mono text-ink">model</code> เพียงสตริงเดียว
+            </p>
+</div>
+<!-- Card 2 -->
+<div class="p-space-md rounded-[16px] bg-paper border border-hairline flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-highlighter-yellow text-ink flex items-center justify-center text-label-caps font-label-caps font-normal">02</span>
+<h3 class="text-ink text-headline-sm font-headline-sm font-normal">Smart Fallback &amp; Load Balancing</h3>
+</div>
+<p class="text-ash text-body-sm font-body-sm leading-relaxed pl-8">
+              เมื่อ upstream provider เกิด rate limit (HTTP 429) หรือ server down ระบบจะ reroute ไปยัง secondary provider อัตโนมัติในระดับ sub-50ms โดยที่แอปพลิเคชันไม่สะดุด
+            </p>
+</div>
+<!-- Card 3 -->
+<div class="p-space-md rounded-[16px] bg-paper border border-hairline flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-bone border border-hairline text-ink flex items-center justify-center text-label-caps font-label-caps font-normal">03</span>
+<h3 class="text-ink text-headline-sm font-headline-sm font-normal">Unified Billing &amp; Consolidated Invoices</h3>
+</div>
+<p class="text-ash text-body-sm font-body-sm leading-relaxed pl-8">
+              จ่ายบิลเดียวรวมทุกค่าย ไม่ต้องผูกบัตรเครดิต 5 ใบ พร้อมระบบตั้งงบประมาณรายวัน รายโปรเจกต์ และ dashboard ควบคุมค่าใช้จ่ายแบบ real-time
+            </p>
+</div>
+</div>
+<!-- Code Sandbox Card (Right 7 Cols) -->
+<div class="lg:col-span-7 rounded-[16px] bg-obsidian text-paper border border-secondary/20 flex flex-col overflow-hidden">
+<!-- Sandbox Header -->
+<div class="h-11 px-space-md bg-obsidian border-b border-secondary/20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded-[4px] bg-secondary/30 text-paper text-label-caps font-label-caps uppercase font-normal" id="tab-python" onclick="switchCodeLang('python')" type="button">
+                Python
+              </button>
+<button class="px-2.5 py-1 rounded-[4px] text-ash hover:text-paper text-label-caps font-label-caps uppercase font-normal transition-colors" id="tab-typescript" onclick="switchCodeLang('typescript')" type="button">
+                TypeScript / Node
+              </button>
+<button class="px-2.5 py-1 rounded-[4px] text-ash hover:text-paper text-label-caps font-label-caps uppercase font-normal transition-colors" id="tab-curl" onclick="switchCodeLang('curl')" type="button">
+                cURL
+              </button>
+</div>
+<button class="flex items-center gap-1 text-ash hover:text-paper text-label-caps font-label-caps uppercase transition-colors" onclick="copyCodeSnippet(this)" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span id="copy-btn-label">Copy Code</span>
+</button>
+</div>
+<!-- Sandbox Code View -->
+<div class="p-space-md flex-1 font-mono text-[13px] leading-relaxed overflow-x-auto text-bone/90" id="code-snippet-container">
+<div class="block" id="code-python">
+<span class="text-ash"># 1. Install official standard library</span><br/>
+<span class="text-highlighter-yellow">from</span> openai <span class="text-highlighter-yellow">import</span> OpenAI<br/><br/>
+<span class="text-ash"># 2. Point base_url to AI Hub Gateway</span><br/>
+              client = OpenAI(<br/>
+                api_key=<span class="text-tertiary-fixed">"aih_live_sec_9941a87b..."</span>,<br/>
+                base_url=<span class="text-tertiary-fixed">"https://api.aihub.dev/v1"</span><br/>
+              )<br/><br/>
+<span class="text-ash"># 3. Request any model with failover routing</span><br/>
+              response = client.chat.completions.create(<br/>
+                model=<span class="text-highlighter-yellow font-normal" id="active-model-name-py">"deepseek-v3"</span>,<br/>
+                messages=[<br/>
+                  {<span class="text-tertiary-fixed">"role"</span>: <span class="text-tertiary-fixed">"user"</span>, <span class="text-tertiary-fixed">"content"</span>: <span class="text-tertiary-fixed">"Synthesize Q4 financial vector index"</span>}<br/>
+                ],<br/>
+                extra_headers={<br/>
+                  <span class="text-tertiary-fixed">"X-AIHub-Fallback"</span>: <span class="text-tertiary-fixed">"claude-3-5-sonnet,gpt-4o"</span><br/>
+                }<br/>
+              )<br/><br/>
+<span class="text-ash">print</span>(response.choices[<span class="text-highlighter-yellow">0</span>].message.content)
+            </div>
+<div class="hidden" id="code-typescript">
+<span class="text-ash">// TypeScript / JavaScript SDK drop-in</span><br/>
+<span class="text-highlighter-yellow">import</span> OpenAI <span class="text-highlighter-yellow">from</span> <span class="text-tertiary-fixed">'openai'</span>;<br/><br/>
+<span class="text-highlighter-yellow">const</span> aiHub = <span class="text-highlighter-yellow">new</span> OpenAI({<br/>
+                apiKey: process.env.AIHUB_API_KEY,<br/>
+                baseURL: <span class="text-tertiary-fixed">'https://api.aihub.dev/v1'</span>,<br/>
+              });<br/><br/>
+<span class="text-highlighter-yellow">const</span> completion = <span class="text-highlighter-yellow">await</span> aiHub.chat.completions.create({<br/>
+                model: <span class="text-highlighter-yellow" id="active-model-name-ts">'deepseek-v3'</span>,<br/>
+                messages: [{ role: <span class="text-tertiary-fixed">'user'</span>, content: <span class="text-tertiary-fixed">'Analyze credit risk payload'</span> }],<br/>
+              });<br/>
+              console.log(completion.choices[<span class="text-highlighter-yellow">0</span>].message);
+            </div>
+<div class="hidden" id="code-curl">
+<span class="text-ash"># cURL endpoint direct call</span><br/>
+              curl https://api.aihub.dev/v1/chat/completions \<br/>
+                -H <span class="text-tertiary-fixed">"Authorization: Bearer $AIHUB_API_KEY"</span> \<br/>
+                -H <span class="text-tertiary-fixed">"Content-Type: application/json"</span> \<br/>
+                -H <span class="text-tertiary-fixed">"X-AIHub-Fallback: claude-3-5-sonnet"</span> \<br/>
+                -d '{<br/>
+                  <span class="text-tertiary-fixed">"model"</span>: <span class="text-highlighter-yellow" id="active-model-name-curl">"deepseek-v3"</span>,<br/>
+                  <span class="text-tertiary-fixed">"messages"</span>: [{<span class="text-tertiary-fixed">"role"</span>: <span class="text-tertiary-fixed">"user"</span>, <span class="text-tertiary-fixed">"content"</span>: <span class="text-tertiary-fixed">"Hello world"</span>}]<br/>
+                }'
+            </div>
+</div>
+<!-- Sandbox Live Verification Footer -->
+<div class="h-10 px-space-md bg-secondary/10 border-t border-secondary/20 flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-ash flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-highlighter-yellow"></span>
+              Gateway Endpoint: <span class="text-paper font-mono text-[12px]">api.aihub.dev/v1</span>
+</span>
+<span class="text-highlighter-yellow text-label-caps font-label-caps uppercase">100% OPENAI COMPATIBLE</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- AI AGENTS MARKETPLACE PREVIEW -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl">
+<div class="max-w-[1200px] mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md border-b border-hairline pb-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-[4px] bg-highlighter-yellow text-ink text-label-caps font-label-caps uppercase">
+              PREVIEW
+            </span>
+<span class="text-label-caps font-label-caps uppercase tracking-wider text-ash">
+              ECOSYSTEM WORKFLOWS · Q2 2025
+            </span>
+</div>
+<h2 class="text-ink text-headline-xl font-headline-xl tracking-tight font-normal">
+            AI Agents &amp; Autonomous Workflows
+          </h2>
+<p class="text-ash text-body-lg font-body-lg font-normal max-w-2xl">
+            พรีวิวระบบ Agentic Pipeline ที่ต่อเข้ากับโมเดลที่ดีที่สุดในแต่ละขั้นตอน ตั้งแต่งานวิจัย เขียนโค้ด ไปจนถึงงานปฏิบัติการลูกค้า
+          </p>
+</div>
+<button class="h-10 px-4 rounded-[6px] bg-paper border border-hairline hover:bg-bone text-ink text-body-sm font-body-sm flex items-center gap-1.5 transition-colors font-normal whitespace-nowrap self-start md:self-auto" onclick="openWaitlistModal()" type="button">
+<span>Join Agents Waitlist</span>
+<span class="material-symbols-outlined text-[16px]">notifications</span>
+</button>
+</div>
+<!-- Agent Categories -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1">
+<span class="px-3 py-1.5 rounded-[6px] bg-ink text-paper text-label-caps font-label-caps uppercase font-normal">All Agents (4)</span>
+<span class="px-3 py-1.5 rounded-[6px] bg-paper border border-hairline text-ash text-label-caps font-label-caps uppercase font-normal">Code &amp; DevOps</span>
+<span class="px-3 py-1.5 rounded-[6px] bg-paper border border-hairline text-ash text-label-caps font-label-caps uppercase font-normal">Research &amp; Data</span>
+<span class="px-3 py-1.5 rounded-[6px] bg-paper border border-hairline text-ash text-label-caps font-label-caps uppercase font-normal">Customer Support</span>
+<span class="px-3 py-1.5 rounded-[6px] bg-paper border border-hairline text-ash text-label-caps font-label-caps uppercase font-normal">FinOps Optimizer</span>
+</div>
+<!-- 4 Agent Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-sm">
+<!-- Agent 1 -->
+<div class="p-space-md rounded-[16px] bg-paper border border-hairline flex flex-col justify-between gap-space-md hover:border-ink transition-colors">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-[8px] bg-bone border border-hairline flex items-center justify-center text-ink">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</span>
+<span class="px-1.5 py-0.5 rounded bg-bone border border-hairline text-ash text-label-caps font-label-caps uppercase">DEV-FLOW</span>
+</div>
+<div>
+<h3 class="text-ink text-headline-sm font-headline-sm font-normal">CodeReview Copilot</h3>
+<p class="text-ash text-body-sm font-body-sm mt-1 leading-relaxed">
+                วิเคราะห์ Pull Request อัตโนมัติ ตรวจจับช่องโหว่ความปลอดภัยด้วย Claude 3.5 พร้อมเขียน Test coverage ผ่าน DeepSeek-V3
+              </p>
+</div>
+</div>
+<div class="space-y-space-sm pt-space-sm border-t border-hairline">
+<div class="flex items-center justify-between text-label-caps font-label-caps text-ash uppercase">
+<span>Stack: Anthropic + DeepSeek</span>
+<span class="text-ink">Pipeline V0.9</span>
+</div>
+<button class="w-full py-2 rounded-[6px] bg-bone border border-hairline hover:bg-highlighter-yellow hover:border-transparent text-ink text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="openWaitlistModal('CodeReview Copilot')" type="button">
+              Preview · Join Waitlist
+            </button>
+</div>
+</div>
+<!-- Agent 2 -->
+<div class="p-space-md rounded-[16px] bg-paper border border-hairline flex flex-col justify-between gap-space-md hover:border-ink transition-colors">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-[8px] bg-bone border border-hairline flex items-center justify-center text-ink">
+<span class="material-symbols-outlined text-[18px]">travel_explore</span>
+</span>
+<span class="px-1.5 py-0.5 rounded bg-bone border border-hairline text-ash text-label-caps font-label-caps uppercase">SYNTHESIS</span>
+</div>
+<div>
+<h3 class="text-ink text-headline-sm font-headline-sm font-normal">Deep Researcher</h3>
+<p class="text-ash text-body-sm font-body-sm mt-1 leading-relaxed">
+                สำรวจข้อมูลเว็บ เจาะลึกแหล่งข่าวและการเงิน ย่อยเอกสาร 200+ ฉบับเป็นบทวิเคราะห์เชิงลึกพร้อมอ้างอิงแหล่งที่มาครบถ้วน
+              </p>
+</div>
+</div>
+<div class="space-y-space-sm pt-space-sm border-t border-hairline">
+<div class="flex items-center justify-between text-label-caps font-label-caps text-ash uppercase">
+<span>Stack: Gemini 2M + Perplexity</span>
+<span class="text-ink">Pipeline V0.8</span>
+</div>
+<button class="w-full py-2 rounded-[6px] bg-bone border border-hairline hover:bg-highlighter-yellow hover:border-transparent text-ink text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="openWaitlistModal('Deep Researcher')" type="button">
+              Preview · Join Waitlist
+            </button>
+</div>
+</div>
+<!-- Agent 3 -->
+<div class="p-space-md rounded-[16px] bg-paper border border-hairline flex flex-col justify-between gap-space-md hover:border-ink transition-colors">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-[8px] bg-bone border border-hairline flex items-center justify-center text-ink">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</span>
+<span class="px-1.5 py-0.5 rounded bg-bone border border-hairline text-ash text-label-caps font-label-caps uppercase">CUSTOMER L1</span>
+</div>
+<div>
+<h3 class="text-ink text-headline-sm font-headline-sm font-normal">Support Sentinel</h3>
+<p class="text-ash text-body-sm font-body-sm mt-1 leading-relaxed">
+                บอทตอบคำถามลูกค้าแบบ Real-time หลายภาษา เชื่อมต่อ Helpdesk ticket และส่งต่อเจ้าหน้าที่เมื่อพบเคสซับซ้อน
+              </p>
+</div>
+</div>
+<div class="space-y-space-sm pt-space-sm border-t border-hairline">
+<div class="flex items-center justify-between text-label-caps font-label-caps text-ash uppercase">
+<span>Stack: GPT-4o + Vector Store</span>
+<span class="text-ink">Pipeline V1.1</span>
+</div>
+<button class="w-full py-2 rounded-[6px] bg-bone border border-hairline hover:bg-highlighter-yellow hover:border-transparent text-ink text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="openWaitlistModal('Support Sentinel')" type="button">
+              Preview · Join Waitlist
+            </button>
+</div>
+</div>
+<!-- Agent 4 -->
+<div class="p-space-md rounded-[16px] bg-paper border border-hairline flex flex-col justify-between gap-space-md hover:border-ink transition-colors">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-[8px] bg-bone border border-hairline flex items-center justify-center text-ink">
+<span class="material-symbols-outlined text-[18px]">price_change</span>
+</span>
+<span class="px-1.5 py-0.5 rounded bg-highlighter-yellow text-ink text-label-caps font-label-caps uppercase">POPULAR</span>
+</div>
+<div>
+<h3 class="text-ink text-headline-sm font-headline-sm font-normal">FinOps Cost Optimizer</h3>
+<p class="text-ash text-body-sm font-body-sm mt-1 leading-relaxed">
+                ประเมินความซับซ้อนของ Prompt อัตโนมัติ แล้วกระจายงานง่ายไปใช้โมเดลราคาถูก ลดต้นทุน API ลงเฉลี่ย 42% โดยไม่ลดคุณภาพผลลัพธ์
+              </p>
+</div>
+</div>
+<div class="space-y-space-sm pt-space-sm border-t border-hairline">
+<div class="flex items-center justify-between text-label-caps font-label-caps text-ash uppercase">
+<span>Stack: Classifier + Multi-LLM</span>
+<span class="text-ink">Pipeline V1.2</span>
+</div>
+<button class="w-full py-2 rounded-[6px] bg-bone border border-hairline hover:bg-highlighter-yellow hover:border-transparent text-ink text-label-caps font-label-caps uppercase transition-colors font-normal" onclick="openWaitlistModal('FinOps Cost Optimizer')" type="button">
+              Preview · Join Waitlist
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- DASHBOARD PREVIEW -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-bone">
+<div class="max-w-[1200px] mx-auto flex flex-col gap-space-lg">
+<div class="space-y-1">
+<span class="text-label-caps font-label-caps uppercase tracking-wider text-ash">CENTRAL CONSOLE PREVIEW</span>
+<h2 class="text-ink text-headline-xl font-headline-xl tracking-tight font-normal">
+          ศูนย์ควบคุมและ Telemetry ระดับองค์กร
+        </h2>
+<p class="text-ash text-body-lg font-body-lg font-normal max-w-2xl">
+          ติดตามการใช้งานรายวินาที, สัดส่วนค่าใช้จ่ายต่อ Provider, ตรวจจับอัตราการเรียกใช้ที่ผิดปกติ และตั้ง Hard Budget Cap ได้ทันที
+        </p>
+</div>
+<!-- Dashboard Window Mockup Frame -->
+<div class="w-full bg-paper rounded-[16px] border border-hairline overflow-hidden">
+<!-- Dashboard Top Header Bar -->
+<div class="h-12 bg-bone border-b border-hairline px-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<span class="text-ink text-label-caps font-label-caps uppercase tracking-wider font-normal">
+              AI HUB CONSOLE · PRODUCTION INSTANCE
+            </span>
+<span class="hidden md:inline-flex items-center gap-1.5 px-2 py-0.5 rounded-[4px] bg-paper border border-hairline text-ash text-label-caps font-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-highlighter-yellow"></span>
+              Live Gateway Active
+            </span>
+</div>
+<div class="flex items-center gap-space-sm text-ash text-body-sm font-body-sm">
+<span>Org: <strong>Acme Enterprise</strong></span>
+<span class="text-hairline">|</span>
+<span class="font-mono text-[12px] text-ink">$4,120.40 / $10,000 Cap</span>
+</div>
+</div>
+<!-- Dashboard Content Grid -->
+<div class="p-space-md grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Left: Usage Chart Mockup & Anomaly Stream (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Telemetry Graph Panel -->
+<div class="p-space-md rounded-[12px] bg-bone border border-hairline flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h4 class="text-ink text-headline-sm font-headline-sm font-normal">Real-Time Ingestion Throughput</h4>
+<p class="text-ash text-body-sm font-body-sm">Requests per minute vs median latency (Last 24 Hours)</p>
+</div>
+<div class="flex items-center gap-2 font-mono text-[12px] text-ink">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-ink inline-block"></span> Req/s</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-highlighter-yellow inline-block"></span> Latency</span>
+</div>
+</div>
+<!-- Inline SVG Chart Mockup -->
+<div class="w-full h-44 pt-2">
+<svg class="w-full h-full overflow-visible" viewbox="0 0 700 160">
+<!-- Grid Lines -->
+<line stroke="#e5e7eb" stroke-width="1" x1="0" x2="700" y1="30" y2="30"></line>
+<line stroke="#e5e7eb" stroke-width="1" x1="0" x2="700" y1="70" y2="70"></line>
+<line stroke="#e5e7eb" stroke-width="1" x1="0" x2="700" y1="110" y2="110"></line>
+<line stroke="#e5e7eb" stroke-width="1" x1="0" x2="700" y1="150" y2="150"></line>
+<!-- Area Fill -->
+<polygon fill="#f4f2f0" opacity="0.6" points="0,150 0,90 60,85 120,95 180,60 240,70 300,45 360,55 420,40 480,35 540,50 600,30 660,25 700,20 700,150"></polygon>
+<!-- Throughput Path (Ink) -->
+<polyline fill="none" points="0,90 60,85 120,95 180,60 240,70 300,45 360,55 420,40 480,35 540,50 600,30 660,25 700,20" stroke="#0c0a08" stroke-width="2"></polyline>
+<!-- Latency Path (Highlighter Yellow) -->
+<polyline fill="none" points="0,110 60,112 120,105 180,98 240,100 300,92 360,95 420,88 480,85 540,90 600,82 660,80 700,78" stroke="#c3d000" stroke-dasharray="4,3" stroke-width="2.5"></polyline>
+<!-- Anomaly Point Marker -->
+<circle cx="480" cy="35" fill="#e4f222" r="4" stroke="#0c0a08" stroke-width="2"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between text-label-caps font-label-caps text-ash uppercase border-t border-hairline pt-2">
+<span>00:00 UTC</span>
+<span>06:00 UTC</span>
+<span>12:00 UTC</span>
+<span>18:00 UTC</span>
+<span>CURRENT (PEAK 1,480 RPM)</span>
+</div>
+</div>
+<!-- Recent Gateway Routing Log Table -->
+<div class="rounded-[12px] bg-bone border border-hairline overflow-hidden">
+<div class="px-space-md py-2 border-b border-hairline flex items-center justify-between">
+<span class="text-label-caps font-label-caps uppercase text-ash tracking-wider">LIVE TELEMETRY STREAM</span>
+<span class="text-body-sm font-body-sm text-ink font-mono">Status: 200 OK</span>
+</div>
+<div class="divide-y divide-hairline text-body-sm font-body-sm">
+<div class="px-space-md py-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-highlighter-yellow"></span>
+<span class="font-mono text-[13px] text-ink">POST /v1/chat/completions</span>
+<span class="text-ash">deepseek-v3</span>
+</div>
+<div class="flex items-center gap-4 text-ash font-mono text-[12px]">
+<span>1,820 toks</span>
+<span class="text-ink">188ms</span>
+<span class="text-ink">$0.0003</span>
+</div>
+</div>
+<div class="px-space-md py-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-ink"></span>
+<span class="font-mono text-[13px] text-ink">POST /v1/chat/completions</span>
+<span class="text-ash">claude-3-5-sonnet</span>
+</div>
+<div class="flex items-center gap-4 text-ash font-mono text-[12px]">
+<span>4,210 toks</span>
+<span class="text-ink">345ms</span>
+<span class="text-ink">$0.0152</span>
+</div>
+</div>
+<div class="px-space-md py-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-highlighter-yellow"></span>
+<span class="font-mono text-[13px] text-ink">POST /v1/chat/completions [FAILOVER TRIGGERED]</span>
+<span class="text-ash">gpt-4o → azure-east</span>
+</div>
+<div class="flex items-center gap-4 text-ash font-mono text-[12px]">
+<span>2,100 toks</span>
+<span class="text-ink">290ms</span>
+<span class="text-ink">$0.0055</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Cost Allocation & Provider Breakdown (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-sm">
+<!-- Provider Split Card -->
+<div class="p-space-md rounded-[12px] bg-bone border border-hairline flex flex-col gap-space-sm">
+<span class="text-label-caps font-label-caps uppercase text-ash tracking-wider">MONTHLY COST ALLOCATION</span>
+<div class="flex items-baseline justify-between">
+<span class="text-ink text-headline-lg font-headline-lg font-normal">$4,120.40</span>
+<span class="text-ash text-body-sm font-body-sm">-38% vs direct APIs</span>
+</div>
+<!-- Bar breakdown -->
+<div class="w-full bg-paper h-3 rounded-[4px] border border-hairline overflow-hidden flex">
+<div class="bg-ink h-full" style="width: 42%" title="OpenAI 42%"></div>
+<div class="bg-ash h-full" style="width: 38%" title="Anthropic 38%"></div>
+<div class="bg-highlighter-yellow h-full" style="width: 20%" title="DeepSeek 20%"></div>
+</div>
+<div class="space-y-2 pt-2 border-t border-hairline text-body-sm font-body-sm">
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-[2px] bg-ink"></span>
+<span>OpenAI / Azure</span>
+</span>
+<span class="font-mono text-ink">42% ($1,730.56)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-[2px] bg-ash"></span>
+<span>Anthropic Bedrock</span>
+</span>
+<span class="font-mono text-ink">38% ($1,565.75)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-[2px] bg-highlighter-yellow"></span>
+<span>DeepSeek &amp; Open Weights</span>
+</span>
+<span class="font-mono text-ink">20% ($824.09)</span>
+</div>
+</div>
+</div>
+<!-- API Keys & Hard Budget Cap Card -->
+<div class="p-space-md rounded-[12px] bg-bone border border-hairline flex flex-col gap-space-sm flex-1 justify-between">
+<div>
+<span class="text-label-caps font-label-caps uppercase text-ash tracking-wider">HARD BUDGET CAP &amp; SAFETY</span>
+<div class="mt-2 space-y-1">
+<div class="flex justify-between text-body-sm font-body-sm text-ash">
+<span>Threshold Limit</span>
+<span class="text-ink font-mono">41.2%</span>
+</div>
+<div class="w-full bg-paper h-2 rounded-full border border-hairline overflow-hidden">
+<div class="bg-ink h-full" style="width: 41.2%"></div>
+</div>
+</div>
+<p class="text-ash text-body-sm font-body-sm mt-3">
+                  ระบบส่ง Webhook แจ้งเตือนเมื่อค่าใช้จ่ายถึง 80% และป้องกันค่าบริการเกินลิมิตแบบ 100%
+                </p>
+</div>
+<div class="pt-2 border-t border-hairline flex items-center justify-between text-label-caps font-label-caps uppercase text-ash">
+<span>Active Keys: 14</span>
+<a class="text-ink hover:underline" href="#">Manage Keys →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PRICING ARCHITECTURE -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl" id="pricing">
+<div class="max-w-[1200px] mx-auto flex flex-col gap-space-lg">
+<div class="text-left space-y-1 border-b border-hairline pb-space-md">
+<span class="text-label-caps font-label-caps uppercase tracking-wider text-ash">TRANSPARENT PRICING · PASS-THROUGH TOKEN RATES</span>
+<h2 class="text-ink text-headline-xl font-headline-xl tracking-tight font-normal">
+          โครงสร้างราคาโปร่งใส ไม่มีค่าธรรมเนียมซ่อนเร้น
+        </h2>
+<p class="text-ash text-body-lg font-body-lg font-normal max-w-2xl">
+          คิดตามอัตราต้นทุนจริงของ Provider (At-cost token rates) พร้อมระบบสลับ Fallback อัตโนมัติและใบกำกับภาษีครบถ้วน
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md items-stretch">
+<!-- Tier 1: Developer -->
+<div class="p-space-lg rounded-[16px] bg-paper border border-hairline flex flex-col justify-between gap-space-lg">
+<div class="space-y-space-md">
+<div class="space-y-1">
+<span class="text-label-caps font-label-caps uppercase text-ash tracking-wider">PAY-AS-YOU-GO</span>
+<h3 class="text-ink text-headline-md font-headline-md font-normal">Developer</h3>
+<p class="text-ash text-body-sm font-body-sm">สำหรับนักพัฒนาและโปรเจกต์เดี่ยวที่ต้องการเริ่มทดสอบและสร้างต้นแบบ</p>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-ink text-display-lg-mobile font-display-lg-mobile font-normal">$0</span>
+<span class="text-ash text-body-sm font-body-sm">/ เดือน + ค่า Token ตามจริง</span>
+</div>
+<ul class="space-y-2.5 text-body-sm font-body-sm text-ash border-t border-hairline pt-space-md">
+<li class="flex items-center gap-2 text-ink">
+<span class="material-symbols-outlined text-[16px] text-ink">check</span>
+                เข้าถึง 140+ โมเดลทุกค่าย
+              </li>
+<li class="flex items-center gap-2 text-ink">
+<span class="material-symbols-outlined text-[16px] text-ink">check</span>
+                At-cost token pass-through
+              </li>
+<li class="flex items-center gap-2 text-ink">
+<span class="material-symbols-outlined text-[16px] text-ink">check</span>
+                5 API Keys พร้อมระบบ Rate limit
+              </li>
+<li class="flex items-center gap-2 text-ink">
+<span class="material-symbols-outlined text-[16px] text-ink">check</span>
+                Unified Dashboard &amp; Console
+              </li>
+<li class="flex items-center gap-2 text-ash">
+<span class="material-symbols-outlined text-[16px] text-ash">check</span>
+                Community Discord Support
+              </li>
+</ul>
+</div>
+<button class="w-full h-11 rounded-[6px] bg-paper border border-hairline hover:bg-bone text-ink text-body-sm font-body-sm transition-colors font-normal" onclick="handleTierSelect('Developer')" type="button">
+            Start Free ($10 Credit)
+          </button>
+</div>
+<!-- Tier 2: Growth (Recommended) -->
+<div class="p-space-lg rounded-[16px] bg-paper border-2 border-ink flex flex-col justify-between gap-space-lg relative">
+<div class="absolute -top-3 left-6">
+<span class="px-2.5 py-0.5 rounded-[4px] bg-highlighter-yellow text-ink text-label-caps font-label-caps uppercase font-normal">
+              RECOMMENDED FOR TEAMS
+            </span>
+</div>
+<div class="space-y-space-md">
+<div class="space-y-1">
+<span class="text-label-caps font-label-caps uppercase text-ash tracking-wider">PRODUCTION SCALE</span>
+<h3 class="text-ink text-headline-md font-headline-md font-normal">Growth</h3>
+<p class="text-ash text-body-sm font-body-sm">สำหรับสตาร์ทอัพและทีมพัฒนาที่ต้องการ reliability สูงและ routing failover</p>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-ink text-display-lg-mobile font-display-lg-mobile font-normal">$49</span>
+<span class="text-ash text-body-sm font-body-sm">/ เดือน + ค่า Token ตามจริง</span>
+</div>
+<ul class="space-y-2.5 text-body-sm font-body-sm text-ink border-t border-hairline pt-space-md">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-ink">check</span>
+                ทุกฟีเจอร์ในแพ็กเกจ Developer
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-ink">check</span>
+                Smart Failover Routing อัตโนมัติ
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-ink">check</span>
+                สิทธิ์เข้าถึง Agent Marketplace ก่อนใคร
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-ink">check</span>
+                SLA รับประกัน Gateway Uptime 99.9%
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-ink">check</span>
+                Fast-track Priority Email &amp; Slack Sync
+              </li>
+</ul>
+</div>
+<button class="w-full h-11 rounded-[6px] bg-highlighter-yellow hover:brightness-95 text-ink text-body-sm font-body-sm transition-all font-normal" onclick="handleTierSelect('Growth')" type="button">
+            Upgrade to Growth
+          </button>
+</div>
+<!-- Tier 3: Enterprise -->
+<div class="p-space-lg rounded-[16px] bg-paper border border-hairline flex flex-col justify-between gap-space-lg">
+<div class="space-y-space-md">
+<div class="space-y-1">
+<span class="text-label-caps font-label-caps uppercase text-ash tracking-wider">ENTERPRISE CLOUD</span>
+<h3 class="text-ink text-headline-md font-headline-md font-normal">Enterprise</h3>
+<p class="text-ash text-body-sm font-body-sm">สำหรับองค์กรขนาดใหญ่ที่มีข้อกำหนด Data Governance, VPC หรือข้อกำหนด SOC2</p>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-ink text-display-lg-mobile font-display-lg-mobile font-normal">Custom</span>
+<span class="text-ash text-body-sm font-body-sm">/ ออกแบบตามปริมาณงาน</span>
+</div>
+<ul class="space-y-2.5 text-body-sm font-body-sm text-ink border-t border-hairline pt-space-md">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-ink">check</span>
+                Dedicated VPC Proxy Gateway
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-ink">check</span>
+                Zero Data Retention (ZDR) Guarantee
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-ink">check</span>
+                Custom Volume Discounted Token Rates
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-ink">check</span>
+                99.995% SLA พร้อมข้อตกลงทางการเงิน
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-ink">check</span>
+                Dedicated Solutions Architect &amp; 24/7 Hotline
+              </li>
+</ul>
+</div>
+<button class="w-full h-11 rounded-[6px] bg-paper border border-hairline hover:bg-bone text-ink text-body-sm font-body-sm transition-colors font-normal" onclick="handleTierSelect('Enterprise')" type="button">
+            Contact Sales Architecture
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- FREQUENTLY ASKED QUESTIONS (FAQ) -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-bone">
+<div class="max-w-[1200px] mx-auto flex flex-col gap-space-lg">
+<div class="space-y-1 border-b border-hairline pb-space-md">
+<span class="text-label-caps font-label-caps uppercase tracking-wider text-ash">KNOWLEDGE BASE &amp; ARCHITECTURE FAQ</span>
+<h2 class="text-ink text-headline-xl font-headline-xl tracking-tight font-normal">
+          คำถามที่พบบ่อยเกี่ยวกับการใช้งาน AI Hub
+        </h2>
+<p class="text-ash text-body-lg font-body-lg font-normal max-w-2xl">
+          ตอบข้อสงสัยด้านเทคนิค ค่าบริการ ระบบ Fallback และการเชื่อมต่อเอกสาร Documentation
+        </p>
+</div>
+<!-- Accordion List -->
+<div class="space-y-2 max-w-3xl">
+<!-- FAQ 1 -->
+<div class="rounded-[12px] bg-paper border border-hairline overflow-hidden">
+<button class="w-full px-space-md py-4 flex items-center justify-between text-left text-ink text-headline-sm font-headline-sm font-normal focus:outline-none" onclick="toggleFaq('faq-1')" type="button">
+<span>AI Hub คิดราคาอย่างไร มีค่าธรรมเนียมบวกเพิ่มไหม?</span>
+<span class="material-symbols-outlined text-ash text-[20px] transition-transform duration-200" id="faq-1-icon">expand_more</span>
+</button>
+<div class="hidden px-space-md pb-4 pt-1 text-ash text-body-md font-body-md border-t border-hairline/60" id="faq-1">
+            ระบบคิดค่า Token ตามราคาจริงที่ Provider (OpenAI, Anthropic, Google, DeepSeek) เรียกเก็บ (Pass-through rate) โดยไม่มีการ Markup แอบแฝงบนแพ็กเกจพื้นฐาน ในส่วนของแพ็กเกจ Growth หรือ Enterprise จะมีค่าธรรมเนียมโครงสร้างระบบ Routing &amp; Failover SLA เพิ่มเติมตามที่ระบุไว้ชัดเจน
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="rounded-[12px] bg-paper border border-hairline overflow-hidden">
+<button class="w-full px-space-md py-4 flex items-center justify-between text-left text-ink text-headline-sm font-headline-sm font-normal focus:outline-none" onclick="toggleFaq('faq-2')" type="button">
+<span>ระบบรองรับโมเดลไหนบ้าง และจะอัปเดตโมเดลใหม่อย่างไร?</span>
+<span class="material-symbols-outlined text-ash text-[20px] transition-transform duration-200" id="faq-2-icon">expand_more</span>
+</button>
+<div class="hidden px-space-md pb-4 pt-1 text-ash text-body-md font-body-md border-t border-hairline/60" id="faq-2">
+            เราซิงก์ข้อมูลและเพิ่มโมเดลใหม่เข้าสู่ระบบภายในไม่เกิน 2 ชั่วโมงหลังจากที่ค่ายต้นทางประกาศเปิดตัว API (เช่น Claude 3.5 Sonnet, GPT-4o, DeepSeek-V3, FLUX.1) คุณสามารถเรียกใช้โมเดลใหม่ได้ทันทีโดยไม่ต้องอัปเดตไลบรารีบนโค้ดของคุณ
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="rounded-[12px] bg-paper border border-hairline overflow-hidden">
+<button class="w-full px-space-md py-4 flex items-center justify-between text-left text-ink text-headline-sm font-headline-sm font-normal focus:outline-none" onclick="toggleFaq('faq-3')" type="button">
+<span>ถ้า Provider ฝั่งหนึ่งล่ม ระบบจัดการอย่างไร (Fallback Policy)?</span>
+<span class="material-symbols-outlined text-ash text-[20px] transition-transform duration-200" id="faq-3-icon">expand_more</span>
+</button>
+<div class="hidden px-space-md pb-4 pt-1 text-ash text-body-md font-body-md border-t border-hairline/60" id="faq-3">
+            คุณสามารถระบุ Fallback chain ใน Header เช่น <code class="font-mono text-ink">X-AIHub-Fallback: claude-3-5-sonnet, gpt-4o</code> หาก Provider ตัวแรกตอบกลับเป็น HTTP 429, 500 หรือ Timeout เกินกว่าค่าที่กำหนด เกตเวย์จะสลับคำขอไปยัง Provider ลำดับถัดไปทันที ช่วยรับประกันว่าผู้ใช้งานปลายทางของคุณจะไม่ได้รับ Error
+          </div>
+</div>
+<!-- FAQ 4 (BR-002) -->
+<div class="rounded-[12px] bg-paper border border-hairline overflow-hidden">
+<button class="w-full px-space-md py-4 flex items-center justify-between text-left text-ink text-headline-sm font-headline-sm font-normal focus:outline-none" onclick="toggleFaq('faq-4')" type="button">
+<span>สามารถอ่าน Documentation ได้เลยโดยไม่ต้องสมัครสมาชิกใช่ไหม?</span>
+<span class="material-symbols-outlined text-ash text-[20px] transition-transform duration-200" id="faq-4-icon">expand_more</span>
+</button>
+<div class="hidden px-space-md pb-4 pt-1 text-ash text-body-md font-body-md border-t border-hairline/60" id="faq-4">
+            ใช่ เอกสารคู่มือทางเทคนิค (Documentation), รายการ Endpoint ทั้งหมด, โค้ดตัวอย่าง Python/TypeScript, และรายงาน Benchmark ของโมเดล เปิดให้อ่านแบบสาธารณะ 100% โดยไม่มี Paywall หรือการบังคับเข้าสู่ระบบตามกฎ Business Requirement BR-002
+          </div>
+</div>
+<!-- FAQ 5 -->
+<div class="rounded-[12px] bg-paper border border-hairline overflow-hidden">
+<button class="w-full px-space-md py-4 flex items-center justify-between text-left text-ink text-headline-sm font-headline-sm font-normal focus:outline-none" onclick="toggleFaq('faq-5')" type="button">
+<span>การย้ายโค้ดเดิมที่ใช้ OpenAI SDK มาใช้ AI Hub ต้องแก้อะไรบ้าง?</span>
+<span class="material-symbols-outlined text-ash text-[20px] transition-transform duration-200" id="faq-5-icon">expand_more</span>
+</button>
+<div class="hidden px-space-md pb-4 pt-1 text-ash text-body-md font-body-md border-t border-hairline/60" id="faq-5">
+            แก้ไขเพียง 2 จุดเท่านั้น: (1) เปลี่ยน <code class="font-mono text-ink">base_url</code> เป็น <code class="font-mono text-ink">https://api.aihub.dev/v1</code> และ (2) นำ API Key ที่ได้จาก AI Hub Console มาใส่แทน ไม่ต้องแก้ Request format หรือ Response parser ใดๆ เลย
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- BOTTOM CALL TO ACTION BANNER -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl">
+<div class="max-w-[1200px] mx-auto rounded-[16px] bg-obsidian text-paper p-space-lg md:p-space-xl border border-secondary/20 flex flex-col md:flex-row md:items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-xl">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary/30 text-paper text-label-caps font-label-caps uppercase tracking-wider font-normal">
+<span class="w-1.5 h-1.5 rounded-full bg-highlighter-yellow"></span>
+          READY TO DEPLOY IN UNDER 2 MINUTES
+        </span>
+<h2 class="text-paper text-headline-xl-mobile md:text-headline-xl font-headline-xl tracking-tight font-normal">
+          เริ่มใช้งาน AI Hub วันนี้ รับเครดิต $10 ฟรีทันที
+        </h2>
+<p class="text-ash text-body-md font-body-md font-normal leading-relaxed">
+          เชื่อมต่อโมเดลชั้นนำระดับโลก 140+ ตัวผ่านคีย์เดียว ประหยัดต้นทุน และหยุดความเสี่ยงจากระบบล่มแบบเบ็ดเสร็จ
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm whitespace-nowrap">
+<button class="h-12 px-6 rounded-[6px] bg-highlighter-yellow hover:brightness-95 text-ink text-body-md font-body-md flex items-center justify-center gap-2 transition-all font-normal" onclick="handleGetStarted()" type="button">
+<span>Get started with $10 free credit</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<a class="h-12 px-5 rounded-[6px] bg-secondary/20 hover:bg-secondary/40 text-paper text-body-md font-body-md flex items-center justify-center transition-colors font-normal" data-path="documentation" href="#">
+          View Documentation →
+        </a>
+</div>
+</div>
+</section>
+<!-- MODAL: WAITLIST & SIGNUP INTERACTION (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-ink/60 backdrop-blur-none hidden items-center justify-center p-4" id="waitlist-modal">
+<div class="w-full max-w-md bg-paper rounded-[16px] border border-hairline p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-hairline pb-2.5">
+<span class="text-label-caps font-label-caps uppercase text-ash tracking-wider">EARLY ACCESS REGISTRATION</span>
+<button class="text-ash hover:text-ink" onclick="closeWaitlistModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div>
+<h3 class="text-ink text-headline-sm font-headline-sm font-normal" id="waitlist-modal-title">Join AI Agents Preview</h3>
+<p class="text-ash text-body-sm font-body-sm mt-1">รับสิทธิ์เข้าทดลองใช้งาน workflow อัตโนมัติก่อนเปิดตัวสู่สาธารณะ</p>
+</div>
+<div class="space-y-space-sm">
+<div>
+<label class="text-label-caps font-label-caps uppercase text-ash block mb-1">Corporate Email</label>
+<input class="w-full h-10 px-3 rounded-[8px] bg-bone border border-hairline text-ink text-body-sm font-body-sm focus:outline-none focus:border-ink" id="modal-email-input" placeholder="developer@company.com" type="email"/>
+</div>
+<div>
+<label class="text-label-caps font-label-caps uppercase text-ash block mb-1">Primary Use Case</label>
+<select class="w-full h-10 px-3 rounded-[8px] bg-bone border border-hairline text-ink text-body-sm font-body-sm focus:outline-none focus:border-ink">
+<option>Multi-model Inference &amp; Fallback</option>
+<option>Autonomous AI Agent Workflows</option>
+<option>LLM Cost Reduction &amp; FinOps</option>
+<option>Enterprise VPC Deployment</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-2">
+<button class="flex-1 h-10 rounded-[6px] bg-highlighter-yellow text-ink text-body-sm font-body-sm hover:brightness-95 transition-all font-normal" onclick="submitWaitlist()" type="button">
+          Confirm Reservation
+        </button>
+<button class="px-4 h-10 rounded-[6px] bg-bone border border-hairline text-ash hover:text-ink text-body-sm font-body-sm transition-colors font-normal" onclick="closeWaitlistModal()" type="button">
+          Cancel
+        </button>
+</div>
+</div>
+</div>
+<script>
+    // 1. Simulating Ping Route
+    function simulatePing(modelKey, btnElement) {
+      const alertBox = document.getElementById('ping-alert-box');
+      const alertText = document.getElementById('ping-alert-text');
+      alertBox.classList.remove('hidden');
+      
+      const prevText = btnElement.innerText;
+      btnElement.innerText = 'Pinging...';
+      btnElement.classList.add('bg-highlighter-yellow');
+
+      setTimeout(() => {
+        btnElement.innerText = prevText;
+        btnElement.classList.remove('bg-highlighter-yellow');
+        if (modelKey === 'deepseek') {
+          alertText.innerText = '✓ deepseek-v3 responded in 218ms via direct endpoint (Cost: $0.000042)';
+        } else if (modelKey === 'claude') {
+          alertText.innerText = '✓ claude-3-5-sonnet responded in 364ms via Bedrock (Cost: $0.000300)';
+        } else if (modelKey === 'gpt4o') {
+          alertText.innerText = '✓ gpt-4o responded in 295ms via OpenAI Azure failover route (Cost: $0.000250)';
+        } else {
+          alertText.innerText = '✓ llama-3.3-70b responded in 132ms via Groq high-speed node (Cost: $0.000079)';
+        }
+      }, 500);
+    }
+
+    // 2. Model search & filter logic
+    let currentModality = 'all';
+
+    function setModalityFilter(modality, btn) {
+      currentModality = modality;
+      document.querySelectorAll('.modality-btn').forEach(b => {
+        b.className = 'modality-btn px-2.5 py-1 rounded-[6px] bg-bone hover:bg-paper text-ink border border-hairline text-label-caps font-label-caps uppercase transition-colors font-normal';
+      });
+      btn.className = 'modality-btn px-2.5 py-1 rounded-[6px] bg-ink text-paper text-label-caps font-label-caps uppercase transition-colors font-normal';
+      filterModelsTable();
+    }
+
+    function filterModelsTable() {
+      const searchVal = (document.getElementById('model-search').value || '').toLowerCase();
+      const providerVal = document.getElementById('provider-filter').value;
+      const rows = document.querySelectorAll('.model-row');
+
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        const rowProvider = row.getAttribute('data-provider') || '';
+        const rowModality = row.getAttribute('data-modality') || '';
+
+        const matchesSearch = text.includes(searchVal);
+        const matchesProvider = (providerVal === 'all') || (rowProvider === providerVal);
+        const matchesModality = (currentModality === 'all') || (rowModality.includes(currentModality));
+
+        if (matchesSearch && matchesProvider && matchesModality) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    // 3. Select Model for snippet
+    function selectModelForSnippet(modelName) {
+      document.getElementById('active-model-name-py').innerText = '"' + modelName + '"';
+      document.getElementById('active-model-name-ts').innerText = "'" + modelName + "'";
+      document.getElementById('active-model-name-curl').innerText = '"' + modelName + '"';
+      
+      const snippetBox = document.getElementById('code-snippet-container');
+      snippetBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      
+      const copyLabel = document.getElementById('copy-btn-label');
+      copyLabel.innerText = 'Model updated!';
+      setTimeout(() => { copyLabel.innerText = 'Copy Code'; }, 1800);
+    }
+
+    // 4. Code Language Tabs
+    function switchCodeLang(lang) {
+      const tabs = ['python', 'typescript', 'curl'];
+      tabs.forEach(t => {
+        const el = document.getElementById('code-' + t);
+        const btn = document.getElementById('tab-' + t);
+        if (t === lang) {
+          el.classList.remove('hidden');
+          el.classList.add('block');
+          btn.className = 'px-2.5 py-1 rounded-[4px] bg-secondary/30 text-paper text-label-caps font-label-caps uppercase font-normal';
+        } else {
+          el.classList.remove('block');
+          el.classList.add('hidden');
+          btn.className = 'px-2.5 py-1 rounded-[4px] text-ash hover:text-paper text-label-caps font-label-caps uppercase font-normal transition-colors';
+        }
+      });
+    }
+
+    function copyCodeSnippet(btn) {
+      const label = document.getElementById('copy-btn-label');
+      label.innerText = 'Copied to clipboard!';
+      setTimeout(() => { label.innerText = 'Copy Code'; }, 2000);
+    }
+
+    // 5. FAQ Accordion Toggle
+    function toggleFaq(id) {
+      const content = document.getElementById(id);
+      const icon = document.getElementById(id + '-icon');
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.innerText = 'expand_less';
+      } else {
+        content.classList.add('hidden');
+        icon.innerText = 'expand_more';
+      }
+    }
+
+    // 6. Waitlist & CTA handler
+    function openWaitlistModal(agentName) {
+      const modal = document.getElementById('waitlist-modal');
+      const title = document.getElementById('waitlist-modal-title');
+      if (agentName) {
+        title.innerText = 'Join Waitlist: ' + agentName;
+      } else {
+        title.innerText = 'Join AI Agents Fleet Preview';
+      }
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeWaitlistModal() {
+      const modal = document.getElementById('waitlist-modal');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+    }
+
+    function submitWaitlist() {
+      const input = document.getElementById('modal-email-input');
+      if (input.value && input.value.includes('@')) {
+        alert('ขอบคุณสำหรับการลงทะเบียน! เราได้ส่งลิงก์ยืนยันและ API sandbox ไปยัง ' + input.value);
+        closeWaitlistModal();
+      } else {
+        alert('กรุณากรอกอีเมลที่ถูกต้อง');
+      }
+    }
+
+    function handleGetStarted() {
+      const heroEmail = document.getElementById('hero-email');
+      if (heroEmail && heroEmail.value && heroEmail.value.includes('@')) {
+        alert('ยินดีต้อนรับสู่ AI Hub! กำลังนำคุณสู่ขั้นตอนเปิดใช้งาน API key สำหรับ ' + heroEmail.value);
+      } else {
+        openWaitlistModal('Developer Access');
+      }
+    }
+
+    function handleTierSelect(tierName) {
+      openWaitlistModal(tierName + ' Tier Provisioning');
+    }
+  </script>
+</div></main><footer class="w-full bg-obsidian text-paper border-t border-secondary/20 pt-space-xl pb-16"><div class="max-w-7xl mx-auto px-margin-mobile md:px-margin"><div class="grid grid-cols-2 md:grid-cols-5 gap-space-lg mb-space-xl"><div class="col-span-2 flex flex-col justify-between pr-space-lg"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="AI Hub Logo" class="h-7 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1VhU8VMjbS3avUT_r5WBEqZar9_InBXq2YUy4IGXpJHvHFeLSgX6VNzZb6dFCBw8Jyl_GJd-BuQ8gmAfa8lBEwn1k-rjGbFTvhx-cFZVoGXyzSIv7wXTdpNM4-fcwo9JYlzWJh6bnPTQBwuYR4JtMEkN_kj3f1Oo6jAC5GQ7Sb7HuXFZ-fXveCtDrZ0ScyYY-ZYvUQ_QGKf28UUbszkK_hkrUK_-0OcKXoStjiguxu_"/><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-paper font-bold">AI HUB</span></div><p class="text-body-sm font-body-sm text-ash max-w-sm">High-performance intelligent routing, multi-provider model telemetry, and enterprise execution infrastructure.</p></div><div class="flex items-center gap-space-xs mt-space-lg"><span class="inline-block w-2 h-2 rounded-full bg-highlighter-yellow"></span><span class="text-label-caps font-label-caps uppercase tracking-wider text-ash">All Gateways Operational</span></div></div><div><p class="text-label-caps font-label-caps uppercase tracking-wider text-ash mb-space-md font-semibold">Platform</p><ul class="space-y-2.5 text-body-sm font-body-sm"><li class="leading-none"><a class="text-paper/80 hover:text-paper transition-colors" data-path="models" href="#">Models API</a></li><li class="leading-none"><a class="text-paper/80 hover:text-paper transition-colors" data-path="agents" href="#">Agent Fleet</a></li><li class="leading-none"><a class="text-paper/80 hover:text-paper transition-colors" data-path="pricing" href="#">Pricing</a></li><li class="leading-none"><a class="text-paper/80 hover:text-paper transition-colors" data-path="dashboard" href="#">Dashboard</a></li></ul></div><div><p class="text-label-caps font-label-caps uppercase tracking-wider text-ash mb-space-md font-semibold">Developers</p><ul class="space-y-2.5 text-body-sm font-body-sm"><li class="leading-none"><a class="text-paper/80 hover:text-paper transition-colors" data-path="documentation" href="#">Documentation</a></li><li class="leading-none"><a class="text-paper/80 hover:text-paper transition-colors" data-path="documentation" href="#">Python &amp; Node SDKs</a></li><li class="leading-none"><a class="text-paper/80 hover:text-paper transition-colors" data-path="documentation" href="#">Routing Gateway</a></li><li class="leading-none"><a class="text-paper/80 hover:text-paper transition-colors" data-path="documentation" href="#">Changelog</a></li></ul></div><div><p class="text-label-caps font-label-caps uppercase tracking-wider text-ash mb-space-md font-semibold">Company &amp; Legal</p><ul class="space-y-2.5 text-body-sm font-body-sm"><li class="leading-none"><a class="text-paper/80 hover:text-paper transition-colors" data-path="documentation" href="#">Terms of Service</a></li><li class="leading-none"><a class="text-paper/80 hover:text-paper transition-colors" data-path="documentation" href="#">Privacy Policy</a></li><li class="leading-none"><a class="text-paper/80 hover:text-paper transition-colors" data-path="documentation" href="#">Security &amp; SOC2</a></li><li class="leading-none"><a class="text-paper/80 hover:text-paper transition-colors" data-path="documentation" href="#">Compliance</a></li></ul></div></div><div class="pt-space-md border-t border-secondary/20 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm text-label-caps font-label-caps uppercase tracking-wider text-ash"><span>© 2025 AI HUB INC. ALL RIGHTS RESERVED.</span><span>EDITORIAL EDITION · TOKYO / NEW YORK / ZURICH</span></div></div></footer></body></html>
